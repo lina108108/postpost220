@@ -6,11 +6,6 @@ public class Post {
     private int time;
     private String content;
     private String imageUrl;
-    private int likesInfo;
-    private int repostInfo;
-    private int viewInfo;
-    private int commentInfo;
-
 
     private int id;
     private int ownerID;
@@ -22,9 +17,9 @@ public class Post {
     private int replyPostId;
     private int friendsOnly;
 
-    private LikesInfo LikesInfo;
-    private RepostInfo RepostInfo;
-    private ViewInfo ViewInfo;
+    private LikesInfo likesInfo;
+    private RepostInfo repostInfo;
+    private ViewInfo viewInfo;
     private String postType;
     private int signerID;
     private int canPin;
@@ -34,7 +29,48 @@ public class Post {
     private int markedAsAds;
     private boolean isFavorite;
     private int postponedId;
-    private String CommentInfo;
+    private String commentInfo;
+
+
+    public String getIdNumber() {
+        return idNumber;
+    }
+
+    public void setIdNumber(String idNumber) {
+        this.idNumber = idNumber;
+    }
+
+    public String getNameGroup() {
+        return nameGroup;
+    }
+
+    public void setNameGroup(String nameGroup) {
+        this.nameGroup = nameGroup;
+    }
+
+    public int getTime() {
+        return time;
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
     public int getId() {
         return id;
@@ -68,7 +104,6 @@ public class Post {
         this.createdBy = createdBy;
     }
 
-
     public String getText() {
         return text;
     }
@@ -101,28 +136,28 @@ public class Post {
         this.friendsOnly = friendsOnly;
     }
 
-    public domain.LikesInfo getLikesInfo() {
-        return LikesInfo;
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
     }
 
-    public void setLikesInfo(domain.LikesInfo likesInfo) {
-        LikesInfo = likesInfo;
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
     }
 
-    public domain.RepostInfo getRepostsInfo() {
-        return RepostInfo;
+    public RepostInfo getRepostInfo() {
+        return repostInfo;
     }
 
-    public void setRepostInfo(domain.RepostInfo repostsInfo) {
-        RepostInfo = repostsInfo;
+    public void setRepostInfo(RepostInfo repostInfo) {
+        this.repostInfo = repostInfo;
     }
 
     public ViewInfo getViewInfo() {
-        return ViewInfo;
+        return viewInfo;
     }
 
-    public void setViewsInfo(domain.ViewInfo viewsInfo) {
-        ViewInfo = viewsInfo;
+    public void setViewInfo(ViewInfo viewInfo) {
+        this.viewInfo = viewInfo;
     }
 
     public String getPostType() {
@@ -195,6 +230,14 @@ public class Post {
 
     public void setPostponedId(int postponedId) {
         this.postponedId = postponedId;
+    }
+
+    public String getCommentInfo() {
+        return commentInfo;
+    }
+
+    public void setCommentInfo(String commentInfo) {
+        this.commentInfo = commentInfo;
     }
 }
 

@@ -1,5 +1,3 @@
-package manager;
-
 import domain.Post;
 
 public class PostManager {
